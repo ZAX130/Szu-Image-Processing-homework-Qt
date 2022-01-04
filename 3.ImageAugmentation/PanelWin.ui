@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PanelWin</class>
+ <widget class="QWidget" name="PanelWin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1140</width>
+    <height>919</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PanelWin</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>731</width>
+     <height>881</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QChartView" name="histview"/>
+    </item>
+    <item>
+     <widget class="QChartView" name="lineview"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="btn_TransAug">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>330</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>变换增强</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>490</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>滤波算子</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>530</y>
+     <width>160</width>
+     <height>234</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QPushButton" name="btn_mean">
+      <property name="text">
+       <string>均值滤波</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_gauss">
+      <property name="text">
+       <string>高斯滤波</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_sobel">
+      <property name="text">
+       <string>Sobel算子</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_la">
+      <property name="text">
+       <string>拉普拉斯算子</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_median">
+      <property name="text">
+       <string>中值滤波</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_max">
+      <property name="text">
+       <string>最大值滤波</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_min">
+      <property name="text">
+       <string>最小值滤波</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="btn_fcolor">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>810</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>伪彩色增强</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_reset">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>850</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>重置</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>760</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>伪彩色增强</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>370</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>直方图操作</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>400</y>
+     <width>160</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QPushButton" name="btn_histUniform">
+      <property name="text">
+       <string>直方图均衡化</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_histRegular">
+      <property name="text">
+       <string>直方图规格化</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_warning">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>300</y>
+     <width>281</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>Warning:The curve is not monotonic</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>80</y>
+     <width>101</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QRadioButton" name="rb_neg">
+      <property name="text">
+       <string>负变换</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="rb_log">
+      <property name="text">
+       <string>对数变换</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="rb_power">
+      <property name="text">
+       <string>幂次变换</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="rb_exp">
+      <property name="text">
+       <string>指数变换</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="rb_seg">
+      <property name="text">
+       <string>分段线性</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>110</y>
+     <width>224</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>x2:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>b:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>y2:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>y1:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>x1:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_8">
+      <property name="text">
+       <string>c:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QSpinBox" name="x1">
+      <property name="maximum">
+       <number>255</number>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QSpinBox" name="y1">
+      <property name="maximum">
+       <number>255</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QSpinBox" name="x2">
+      <property name="maximum">
+       <number>255</number>
+      </property>
+      <property name="value">
+       <number>255</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QSpinBox" name="y2">
+      <property name="maximum">
+       <number>255</number>
+      </property>
+      <property name="value">
+       <number>255</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>r:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>a:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_13">
+      <property name="text">
+       <string>a:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_14">
+      <property name="text">
+       <string>b:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QDoubleSpinBox" name="log_a">
+      <property name="decimals">
+       <number>3</number>
+      </property>
+      <property name="minimum">
+       <double>0.010000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>0.100000000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>0.005000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QDoubleSpinBox" name="x_r">
+      <property name="decimals">
+       <number>1</number>
+      </property>
+      <property name="minimum">
+       <double>0.100000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>10.000000000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>0.100000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QDoubleSpinBox" name="e_c">
+      <property name="decimals">
+       <number>3</number>
+      </property>
+      <property name="minimum">
+       <double>0.010000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>0.065000000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>0.001000000000000</double>
+      </property>
+      <property name="value">
+       <double>0.010000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QSpinBox" name="log_b">
+      <property name="maximum">
+       <number>255</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QSpinBox" name="x_b">
+      <property name="maximum">
+       <number>255</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QSpinBox" name="e_a">
+      <property name="maximum">
+       <number>255</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>40</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>灰度线性/非线性变换</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header>QtCharts/qchartview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

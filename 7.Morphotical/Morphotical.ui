@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MorphoticalClass</class>
+ <widget class="QWidget" name="MorphoticalClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>716</width>
+    <height>661</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Morphotical</string>
+  </property>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>421</width>
+     <height>311</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>240</y>
+     <width>161</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="btn_erosion">
+      <property name="text">
+       <string>腐蚀</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_expand">
+      <property name="text">
+       <string>膨胀</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_open">
+      <property name="text">
+       <string>开运算</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_close">
+      <property name="text">
+       <string>闭运算</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>340</y>
+     <width>421</width>
+     <height>311</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>450</y>
+     <width>161</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QPushButton" name="btn_chooseImg">
+      <property name="text">
+       <string>选择图片</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_reset">
+      <property name="text">
+       <string>重置</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>40</y>
+     <width>81</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QRadioButton" name="rb_rect">
+      <property name="text">
+       <string>矩形</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="rb_cross">
+      <property name="text">
+       <string>十字</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="rb_ellipse">
+      <property name="text">
+       <string>椭圆</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QSpinBox" name="sb_w">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>120</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>3</number>
+   </property>
+   <property name="maximum">
+    <number>11</number>
+   </property>
+   <property name="singleStep">
+    <number>2</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>90</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>size:</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="sb_h">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>160</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>3</number>
+   </property>
+   <property name="maximum">
+    <number>11</number>
+   </property>
+   <property name="singleStep">
+    <number>2</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>120</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>w:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>160</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>h:</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Morphotical.qrc"/>
+ </resources>
+ <connections/>
+</ui>

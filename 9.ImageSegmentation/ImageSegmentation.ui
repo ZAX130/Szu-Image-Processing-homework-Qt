@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImageSegmentationClass</class>
+ <widget class="QWidget" name="ImageSegmentationClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>526</width>
+    <height>511</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ImageSegmentation</string>
+  </property>
+  <widget class="QMyGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>291</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>CrossCursor</cursorShape>
+   </property>
+  </widget>
+  <widget class="QMyGraphicsView" name="graphicsView_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>270</y>
+     <width>291</width>
+     <height>201</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_chooseImg">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>240</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>原图像</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>480</y>
+     <width>211</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>分割图像</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_hand">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>110</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>手动阈值</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_otus">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>200</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>大津阈值</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_regionGrow">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>290</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>区域生长</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_regionSplit">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>390</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>区域分裂</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spin_threshold">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>110</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>255</number>
+   </property>
+   <property name="value">
+    <number>125</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spin_growthreshold">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>290</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>255</number>
+   </property>
+   <property name="value">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_warning">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>320</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:red</string>
+   </property>
+   <property name="text">
+    <string>生长模式中</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>350</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>坐标:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_coordinate">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>350</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QMyGraphicsView</class>
+   <extends>QGraphicsView</extends>
+   <header>qmygraphicsview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="ImageSegmentation.qrc"/>
+ </resources>
+ <connections/>
+</ui>
